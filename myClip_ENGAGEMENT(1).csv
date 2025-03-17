@@ -1,0 +1,394 @@
+﻿"Engagement ID","Title","Owner","Age","Status","Service Name","Problem Description","Resolution Summary"
+"BEMS01836184","asdm: FP4100 9.18.4.47 Error when view Real-Time Log Viewer ASDM - PT MAYBANK INDONESIA (ASDM 698625625)","Praveen Rai (praverai)","15","Open","BEMS","Problem Details:  Error when viewing Real-Time Log Viewer ASDM
+
+We having issues every time we open the live log viewer on ASDM.
+The ASDM keeps asking us to refresh to resolve the issue.
+
+Error:Cluster member data is not loaded properly for member unit() after changing contexts.
+
+- After clicking OK ASDM will open the real time log viewer window but then another messages saying ""Syslog Connection Lost. Try restarting the Syslog connection""
+
+ASDM version 7.19(1)95
+ASA  9.18(4)47 
+
+
+Reason to Bypass TAC Sponsor:
+open BEMS
+
+ **Log file(s) in CSOne**
+[asa-aci-3feb2025.txt](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698625625&fileName=asa-aci-3feb2025.txt )",
+"BEMS01833660","*CLOSED* asdm: FP2110 7.22.1 7.22 not able lo lunch ASDM after upgrade it from 7.20 to 7.22 - PARAGON CUSTOMER COMMUNICATIONS LONDON (ASDM 698530259)","David Alfaro Leon (dalfarol)","13","Closed","BEMS","not able to luch the ASDM 7.22 , where it work fine with ASDM 7.22
+I found this erorr in Java logs: Unable to validate the certificate of pdm.sgz file.
+
+Expectation from the Escalation 
+************************** 
+to fix the asdm lunch issue, 
+
+Data collected 
+************ 
+debug http output : https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698530259&fileName=Cisco%20VPN%20Debug%20capture%20-%203Feb25
+java logs: https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698530259&fileName=Cisco%20VPN%20Java%20capture%20-%203Feb25.txt
+capture between the ASA and the PC: https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698530259&fileName=test
+show tech and show run: https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698530259&fileName=Cisco%20VPN%20Show%20run%20and%20tech
+debug log buffer: https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698530259&fileName=ASDM%20ISSUE%20LOGS
+
+ASDM 7.22
+ASA version 9.20.3.10
+
+Problem Description 
+not able to luch the ASDM 7.22 , where it work fine with ASDM 7.22
+
+ **Log file(s) in CSOne**
+[Cisco VPN Debug capture - 3Feb25](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698530259&fileName=Cisco+VPN+Debug+capture+-+3Feb25 )
+[Cisco VPN Java capture - 3Feb25.txt](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698530259&fileName=Cisco+VPN+Java+capture+-+3Feb25.txt )
+[Cisco VPN Show run and tech](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698530259&fileName=Cisco+VPN+Show+run+and+tech )
+[ASDM ISSUE LOGS](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698530259&fileName=ASDM+ISSUE+LOGS )
+[test](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698530259&fileName=test )","Customer: PARAGON CUSTOMER COMMUNICATIONS LONDON LTD - SR:698530259
+Product: ASDM / Model: FP2110 / Version(s): [""7.22.1""]
+Bugs: CSCwo13387
+---
+Problem Description:*CLOSED* asdm: FP2110 7.22.1 7.22 not able lo lunch ASDM after upgrade it from 7.20 to 7.22 - PARAGON CUSTOMER COMMUNICATIONS LONDON (ASDM 698530259)
+Actions Taken for resolution: 
+Captures were analyzed 
+Logs were reviewed
+Resolution: The problem resolved by itself. Therefore, network congestion must have caused the issue as identified in the captures. 
+Any Workaround: N/A"
+"BEMS01832364","*CLOSED* asdm: 5525 7.20.2 On : when ever we are giving command from the ASDM to make it active from standby device it's not working. Doesn't matter which ever the device is active - KGHM INTERNATIONAL (ASDM 697253394)","Garrett McCollum (gmccollu)","13","Closed","BEMS","The customer, KGHM International Ltd., is facing issues related to two CVEs (CVE-2024-20353 and CVE-2024-20359) affecting their ASA devices: ASA 5525-X running version 9.14.4 and ASA 5516-X running version 9.16.2.14. They sought advice on protection measures for the ASA 5525-X, which lacks an available update, and requested information on potential known issues with updating the ASA 5516-X to version 9.16.4.57. After updating the ASA 5516-X, the customer encountered issues with the failover feature in ASDM (version 7.20.2), which was functioning correctly only via CLI. The failover issue impacts their ability to maintain high availability and reliability of their network security operations.
+
+ **Log file(s) in CSOne**
+[kw-asa-secondary-logs-18dec2024](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697253394&fileName=kw-asa-secondary-logs-18dec2024 )
+[kw-asa-primary-logs-18dec2024](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697253394&fileName=kw-asa-primary-logs-18dec2024 )
+[20240920-145625239_KW-ASA-Secondary-show-tech.log](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697253394&fileName=20240920-145625239_KW-ASA-Secondary-show-tech.log )
+[20240920-145625237_KW-ASA-Secondary-2.log](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697253394&fileName=20240920-145625237_KW-ASA-Secondary-2.log )
+[20240920-145625228_KW-ASA-Primary-show-tech.log](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697253394&fileName=20240920-145625228_KW-ASA-Primary-show-tech.log )
+[20240920-145625222_KW-ASA-Primary-2.log](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697253394&fileName=20240920-145625222_KW-ASA-Primary-2.log )","Customer: KGHM INTERNATIONAL LTD - SR:697253394
+Product: ASDM / Model: ASA5525 / Version(s): [""7.20.2""]
+Bugs: None
+---
+Problem Description:*CLOSED* asdm: 5525 7.20.2 On : when ever we are giving command from the ASDM to make it active from standby device it's not working. Doesn't matter which ever the device is active - KGHM INTERNATIONAL (ASDM 697253394)
+Actions Taken for resolution: Analyzed data and provided TAC action plan.  
+Resolution: CU no longer responsive and TAC requested BEMS closure.
+Any Workaround:
+Notes: Advised to test via mgmt interface and not data interface when connecting via ASDM."
+"BEMS01832260","*CLOSED* asdm: FP3120 9.18.4.47 7.22.1 Configuration difference between ASDM and CLI - FUJITSU (ASA 698605572)","Adrian Koszorus (akoszoru)","12","Closed","BEMS","##### Problem Description #####
+Hardware Information : FPR3120
+Software Information : 9.18(4)47
+Symptom :
+Regarding trustpoint setting, customer tried to replace CDP url from ASDM
+
+[old config]
+crypto ca trustpoint SSLVPN_ROOT-CA2
+ revocation-check crl none
+ enrollment terminal
+ validation-usage ipsec-client ssl-client ssl-server
+ match certificate DefaultCertificateMap override cdp  1 url http://50.27.190.25/certs/certs.crl <<<★
+ match certificate KojitenCertificateMap override cdp  1 url http://50.27.190.25/certs/certs.crl <<<★
+ match certificate LDAP-CertificateMap override cdp  1 url http://50.27.190.25/certs/certs.crl <<<★
+
+[new config]
+match certificate LDAP-CertificateMap override cdp  1 url http://10.94.10.108/certs/certs.crl
+match certificate KojitenCertificateMap override cdp  1 url http://10.94.10.108/certs/certs.crl
+match certificate DefaultCertificateMap override cdp  1 url http://10.94.10.108/certs/certs.crl
+
+They went Configuration > Remote Access VPN > Certificate Management > CA certificates
+and selected Trustpoint and then ""Edit"". > CRL Distribution Point > Select  the row > ""Edit"" > Changed ""URL:"" to new one.
+
+After applying new configuration, they noticed that old configuration was not deleted but new url was added under the old configuration.
+
+[after applying configuration]
+crypto ca trustpoint SSLVPN_ROOT-CA2
+ revocation-check crl none
+ enrollment terminal
+ validation-usage ipsec-client ssl-client ssl-server
+ match certificate DefaultCertificateMap override cdp  1 url http://50.27.190.25/certs/certs.crl
+ match certificate KojitenCertificateMap override cdp  1 url http://50.27.190.25/certs/certs.crl
+ match certificate LDAP-CertificateMap override cdp  1 url http://50.27.190.25/certs/certs.crl
+ match certificate LDAP-CertificateMap override cdp  1 url http://10.94.10.108/certs/certs.crl
+ match certificate KojitenCertificateMap override cdp  1 url http://10.94.10.108/certs/certs.crl
+ match certificate DefaultCertificateMap override cdp  1 url http://10.94.10.108/certs/certs.crl","Customer: FUJITSU - SR:698605572
+Product: ASA / Model: FP3120 / Version(s): [""9.18.4.47"",""7.22.1""]
+Bugs: CSCwo06571
+---
+Problem Description:*CLOSED* asdm: FP3120 9.18.4.47 7.22.1 Configuration difference between ASDM and CLI - FUJITSU (ASA 698605572)
+Actions Taken for resolution: I have checked the TAC repro lab and confirmed the issue. ASDM and ASA development were enaged to check if this is an expected behavior. A new minor defect is raised.
+Resolution: A new minor defect is raised.
+Any Workaround: Delete the old CRL DP and then add the new one instead of editing the old CDP."
+"BEMS01827233","*CLOSED* asdm: FP1150 7.19.1.95 Unable to save DAP changes on ASDM - D E SHAW INDIA PRIVATE (ASDM 698132593)","Danny Lia (dlia)","12","Closed","BEMS","The customer, is experiencing discrepancies with certain Dynamic Access Policies (DAP) on their Adaptive Security Appliance (ASA) VPN. Specifically, settings made to DAP rules via the Adaptive Security Device Manager (ASDM) interface revert every time they try to edit a rule.
+
+Exact issue: When a change to the DAP rules is made (via ASDM) the 'Apply' button is grayed out and cu cannot save the changes to the DAP rule.
+Previously there was incompatibility with ASDM and ASA image versions. Cu upgraded ASDM image per recommendation to ASDM 7.19(1)95 but the issue persists.
+
+ **Log file(s) in CSOne**
+[backup-configuration.zip](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698132593&fileName=backup-configuration.zip )
+[20241203-035244044_show-tech-swvpn-qa2.psc2-3-dec-24](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698132593&fileName=20241203-035244044_show-tech-swvpn-qa2.psc2-3-dec-24 )
+[show-tech-14-oct-24](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698132593&fileName=show-tech-14-oct-24 )","Customer: D E SHAW INDIA PRIVATE LIMITED - SR:698132593
+Product: ASDM / Model: FP1150 / Version(s): [""7.19.1.95"",""9.18(4)47""]
+Bugs: CSCwn89425
+---
+Problem Description:*CLOSED* asdm: FP1150 7.19.1.95 Unable to save DAP changes on ASDM - D E SHAW INDIA PRIVATE (ASDM 698132593)
+Actions Taken for resolution:  Accessed lab recreate and determined the 'Apply' button was grayed out because the configuration was invalid.  Filed enhancement to request better messaging to users.
+Resolution: Identified misconfig and filed enhancement request.
+Any Workaround: Correct config and add a AAA attribute"
+"BEMS01814852","*CLOSED* asdm: ASAv 7.22.1 The local pool configured under the tunnel-group configuration via CLI is not reflected under the connection profile configuration in ASDM - XEVIT (ASDM 698304125)","Ioan Pasca (ipasca)","18","Closed","BEMS","The local pool configured under the tunnel-group configuration via CLI is not reflected under the connection profile configuration in ASDM. 
+ASDM showing the attached  error when we try to modify anything on the connection profile option.
+
+ **Log file(s) in CSOne**
+[BEMS for 698304125.docx](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698304125&fileName=BEMS+for+698304125.docx )
+[show-tech.log](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698304125&fileName=show-tech.log )
+[ASDM-Warning-Message.PNG](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698304125&fileName=ASDM-Warning-Message.PNG )","Customer: XEVIT GMBH - SR:698304125
+Product: ASDM / Model: ASAv / Version(s): [""7.22.1""]
+Bugs: CSCwm94971,CSCwn42250
+---
+Problem Description:*CLOSED* asdm: ASAv 7.22.1 The local pool configured under the tunnel-group configuration via CLI is not reflected under the connection profile configuration in ASDM - XEVIT (ASDM 698304125)
+Actions Taken for resolution: Analyzed data, discussed with Development
+Resolution: The issue is that Secure Client Connection Profile address pool is not shown in ASDM, but this issue is only happening for certain versions(e.g. when ASDM is on a release higher than the original ASDM release with same ASA version). A new bug was opened which was duplicated with an existing one and its fix will be available in a further release. Multiple workarounds exist to mitigate the issue.
+Any Workaround:"
+"BEMS01814445","*CLOSED* asdm: 5516 7.20.2 Unable to Access ASA through ASDM - GPC ASIA PACIFIC (ASDM 697694913)","Rajkumar Kasi (rajkk)","19","Closed","BEMS","Unable to access ASDM for the standby device.
+
+ **Log file(s) in CSOne**
+[console_ASA_ME2.log](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697694913&fileName=console_ASA_ME2.log )
+[Logs_ASA_ME4.txt](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697694913&fileName=Logs_ASA_ME4.txt )
+[Java_log_ME4.txt](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697694913&fileName=Java_log_ME4.txt )
+[ASA_Standby.log](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697694913&fileName=ASA_Standby.log )
+[ASA _Working Java .txt](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697694913&fileName=ASA+_Working+Java+.txt )
+[ASA _Non_Working Java .txt](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697694913&fileName=ASA+_Non_Working+Java+.txt )
+[capin](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697694913&fileName=capin )
+[asp](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=697694913&fileName=asp )","Customer: GPC ASIA PACIFIC - SR:697694913
+Product: ASDM / Model: ASA5516 / Version(s): [""7.20.2""]
+Bugs: None -- Related Engagement(s): ESC01798093
+---
+Problem Description:*CLOSED* asdm: 5516 7.20.2 Unable to Access ASA through ASDM - GPC ASIA PACIFIC (ASDM 697694913)
+Actions Taken for resolution: Requested additional information from the customer along with a suggestion to upgrade the ASDM to one of the supported latest version, since they were using a version which was not available in the CCO portal. After installing ASDM 7.20.2 and after a while, it started working fine and the issue is no more occurring for the customer.
+Resolution: Looks like unsupported ASDM version caused this issue and it worked fine after installing a supported ASDM version from the CCO portal. Please collect the requested information if the issue reappears and open a new BEMS.
+Any Workaround:
+Notes:"
+"BEMS01806150","*CLOSED* asdm: FP4112 9.18.4.29 9.12 ASDM pusing lasrge amount of config, Same config is already present on device - NATIONAL STOCK EXCHAGE OF INDIA (ASA 698170281)","Nathaniel Adam Marbaniang (nmarbani)","41","Closed","BEMS","As part of accounting logs, we observe that ASDM is pushing large configuration in one go to the ASA.
+The configuration has following section :
+	1.	Removal of stand by IP addresses from all the data interfaces.
+	2.	Time-range configuration
+	4.	Object configuration
+		configuration for all the objects is being pushed again, where as the same configuration exist on the device.
+		we would like to understand under which scenario, ASDM will push such large config.
+
+
+File name : TACACS authorization logs.xlsx
+As per the lab setup, if we try to create a duplicate object, then ASDM will show the below error message.
+Which means that object configuration and time range configuration should not be a human action.
+And we think, such large configuration from ASDM looks to be a buggy behaviour, and we would like to understand in which scenario, ASDM can push the entire running configuration back to the device.
+
+￼
+Reason to Bypass TAC Sponsor:
+Working with Kunal on this for RCA","Customer: NATIONAL STOCK EXCHAGE OF INDIA LTD - SR:698170281
+Product: ASA / Model: FP4112 / Version(s): [""9.18.4.29""]
+Bugs: None
+---
+Problem Description:
+
+
+FP4112 9.18.4.29 9.12 ASDM pushing large amount of config which customer claimed did not make those changes. As a result standby ips were removed and Secondary management was inaccessible Only few activities was performed as per the customer
+
+Actions Taken for resolution:
+
+
+Escalations reviewed the data with TAC and it shows the changes were made by user. The same was followed by TAC in Lab which resulted in similar scenario. 
+Escalations also involved the Development to examine the logs considering this is Stock exchange and such unauthorised changes are inaccessible but no known defects
+exists nor have they comes across such issues. 
+
+
+Resolution:
+
+
+TAC shared the root cause to customer which proves the actions made by the user.
+In short, this is more of a user error and not any defect from device side.
+
+
+
+Any Workaround:
+Notes:"
+"BEMS01802054","*REJECTED* asdm: FP2140 7.19.1 logs are not showing in the event viewer in the ASDM - NEXIO (ASDM 698037574)","Faslur Rahman Abdul Azeez (fabdulaz)","12","Rejected","BEMS","The customer is experiencing an issue where connection logs are not visible in the ASA Realtime Log Viewer on the ASDM for their Firepower 2140 Appliance running Cisco Adaptive Security Appliance Software Version 9.18(4)34. This issue is affecting their ability to monitor VPN and firewall activities, which is crucial for maintaining network security and performance. The device is critical for handling all SSL connections, implying a significant impact on network operations.
+
+ **Log file(s) in CSOne**
+[20241009-075438082_Ampath ASA asdm Java outputs.txt](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698037574&fileName=20241009-075438082_Ampath+ASA+asdm+Java+outputs.txt )
+[20241009-073848124_Ampath ASA asdm outputs.txt](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698037574&fileName=20241009-073848124_Ampath+ASA+asdm+outputs.txt )
+[20240930-023915828_ASA-2140-Primary.log](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698037574&fileName=20240930-023915828_ASA-2140-Primary.log )",
+"BEMS01800097","*CLOSED* asdm: FP3105 7.22.1 - Secure Client Connection Profile Address Pool not Shown - NTT NETHERLANDS BV (ASDM 698014467)","Eric Fernald (efernald)","6","Closed","BEMS","After upgrading their SFW3105 from 9.19 to 9.22 and respective matching ASDM (7.22) they no longer can see the VPN Pool address under the Secure Client Connection Profile on ASDM, although the configuration is correctly set on the running and saved config of the device.
+
+Attaching the show-tech from the device, specific we need to focus on this Connection Profile:
+
+ip local pool VPNRDP_Pilot_Test_Pool 10.30.113.193-10.30.113.254 mask 255.255.254.0
+
+tunnel-group VPNRDP general-attributes
+ address-pool VPNRDP_Pilot_Test_Pool
+ authentication-server-group TOKENS
+ default-group-policy VPNRDP
+
+And if you try to assign through the ASDM, it fails to deploy the changes, as the IP Pool already exists on the configuration.
+
+[OK] tunnel-group VPNRDP general-attributes
+      tunnel-group VPNRDP general-attributes
+[ERROR] address-pool  VPNRDP_Pilot_Test_Pool
+	 Duplicate address-pool VPNRDP_Pilot_Test_Pool
+
+
+
+ **Log file(s) in CSOne**
+[sh_tech_be-bru-asa-rcl-01.log](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=698014467&fileName=sh_tech_be-bru-asa-rcl-01.log )","Customer: NTT NETHERLANDS BV - SR:698014467
+Product: ASDM / Model: FP3105 / Version(s): [""7.22.1""]
+Bugs: CSCwm94971
+---
+Problem Description:*CLOSED* asdm: FP3105 7.22.1 - Secure Client Connection Profile Address Pool not Shown - NTT NETHERLANDS BV (ASDM 698014467)
+Actions Taken for resolution: TAC and development reproduced issue on local lab setups
+Resolution: new defect filed, CSCwm94971, development reproduced and working on fix for a later ASDM release. Workarounds noted on defect
+Any Workaround: Workaround options noted on defect
+Notes:"
+"BEMS01763705","*CLOSED* asdm: ASAv 7.19.1 Unable to launch anyconnect profile editor - CORELOGIC AUSTRALIA PTY (ASDM 697344163)","DANIEL DUMITRU GLODES (dglodes)","20","Closed","BEMS",">> Cu getting below error while launcing anyconnect profile editor even though anyconnect images are 4.8 . 
+
+Error : There is no profile editor plugin in your Secure Client Image on the device. Please go to Network (Client) Access >Secure Client Software and install the Secure Client Image version 2.5 or later and then try again
+
+ASAv - 9.19.1
+ASDM - 7.19.1","Customer: CORELOGIC AUSTRALIA PTY LTD - SR:697344163
+Product: ASDM / Model: ASAv / Version(s): [""7.19.1""]
+Bugs: CSCwi74678,CSCwk64399
+---
+Problem Description:*CLOSED* asdm: ASAv 7.19.1 Unable to launch anyconnect profile editor - CORELOGIC AUSTRALIA PTY (ASDM 697344163)
+Actions Taken for resolution: After analyzing the data provided, the customer's issue was straightforward to reproduce. The TAC lab, equipped with the customer's environment, successfully replicated the problem and filed a new bug. The ASDM development team was engaged and supplied with the steps to reproduce the issue.
+Resolution: The ASDM development team provided a fix and moved the bug to a resolved state.
+Any Workaround: use older ASDM version or a new fixed version.
+Notes:"
+"BEMS01763568","*CLOSED* asdm: ASAv 7.20.2 ASA ASDM 7.20.2 - Not showing ""Secure Client Profile"" - QBEYOND AG ULM (ASDM 697505496)","Razvan Popescu (rpopescu)","20","Closed","BEMS","We experiencing issue with ASDM showing ""Configuration > Remote Access VPN > Network (Client) Access > Secure Client Profile"" of ASAs running AS OS 9.16(4)57 with ASDM OpenJRE 7.19(1)95.
+Later customer upgraded to version 7.20.2, after ASDM upgrade, we faced the new errors: ""certificate validation failed. Unable to load Secure Client Profile Editor"" and ""The Secure Client profle plug-in can not be accessed. Please press the Refresh button on the ASDM tool bar. If this issue persists, please restart ASDM"".
+- Errors matched case: 696928493, which states that the fix was done by upgrading the Secure Client to 5.1.3 (from 5.1.2).
+- Upgrade of Secure Client did not resolve the issue.","Customer: QBEYOND AG ULM - SR:697505496
+Product: ASDM / Model: ASAv / Version(s): [""7.20.2"",""9.16.4.57""]
+Bugs: CSCwk67345,CSCwk67368,CSCwk67980
+---
+Problem Description:*CLOSED* asdm: ASAv 7.20.2 ASA ASDM 7.20.2 - Not showing ""Secure Client Profile"" - QBEYOND AG ULM (ASDM 697505496)
+Actions Taken for resolution: investigate tthe symptoms and logs, searched for existing bugs, collected debug data and engaged dev. Opened new enhancement and documentation bugs
+Resolution: opened enhancement and documentation bugs, advised for firestarter case to be opened to ask for ASDM to be supported also on Linux OSs
+Any Workaround: use ASDM on the supported OSs
+Notes:"
+"BEMS01749193","*CLOSED* asdm: 5525 7.19.1.95 ASDM freezes when modifying network objects - CFL CHEMIN DE FER LUXEMBOURGEOIS (ASDM 696224702)","Shanti Prateek Allamudi (shallamu)","34","Closed","BEMS","- Customer is currently facing an issue with the Cisco ASDM utility on ASA5525.
+- If you right click an existing network object or object-group in the ASDM Manager GUI **Firewall->Access Rules** (in the Addresses pane) and select edit to modify the object the dialog box appears, unfortunately ""freezes"" after a couple of seconds (random period of time).
+- Customer cannot modify anymore the values in the fields (text boxes) like *Name* or *IP Address*, the *OK* button to close the window still works but the changes you managed to to make before the ""freeze"" are not supplied..
+- Customer identified the issue for the first time after upgrading from 9.12(4)58 to the latest interim 9.12(4)62.
+- ASDM is running on OS Microsoft Windows Server 2016 Standard with 12GB of RAM and 6 cores.
+- Issue was not reproducible with debugging image suggested by dev team: 20240419-093448225_ASDM-log-debug-version.zip 
+
+ **Log file(s) in CSOne**
+[20240419-093448225_ASDM-log-debug-version.zip](https://cxfiles-v2-ui.cxapps.cisco.com/v2/files/download?appId=CSOne&forceText=-1&id=696224702&fileName=20240419-093448225_ASDM-log-debug-version.zip )","Customer: CFL CHEMIN DE FER LUXEMBOURGEOIS - SR:696224702
+Product: ASDM / Model: ASA5525 / Version(s): [""7.19.1.95""]
+Bugs: CSCwj12250
+---
+Problem Description:*CLOSED* asdm: 5525 7.19.1.95 ASDM freezes when modifying network objects - CFL CHEMIN DE FER LUXEMBOURGEOIS (ASDM 696224702)
+Actions Taken for resolution: Collected debug logs, reviewed with DE
+Resolution: Debug lines have been added in the code to help find out root cause for ASDM Freeze issue in case it recurs as currently the issue has been resolved after applying the debug ASDM image. The fix for the issue where ASDM is throwing ""ConcurrentModificationException"" java errors has been committed as well. These two fixes will be included in the upcoming 7.22.1 ASDM release.
+Any Workaround: None"
+"BEMS01740543","*CLOSED* asdm: FP4112 7.19.1.90 Session Timeout for ASDM(http) is not functional - HITACHI INFORMATION (ASDM 697174132)","Adrian Koszorus (akoszoru)","6","Closed","BEMS","To whom it may concern. 
+Hi I am Hiroshi from Japan TAC.
+
+■Customer condition
+device: FPR-4112-K9
+asdm version: asdm-7191-90.bin
+ASA version: 9.18(3)56
+
+Session time out for ASMD doesn't work for my customer client PC even though they setup its configuration properly.","Customer: HITACHI INFORMATION - SR:697174132
+Product: ASDM / Model: FP4112 / Version(s): [""7.19.1.90"",""9.18.3.56""]
+Bugs: CSCwj70826
+---
+Problem Description:*CLOSED* asdm: FP4112 7.19.1.90 Session Timeout for ASDM(http) is not functional - HITACHI INFORMATION (ASDM 697174132)
+Actions Taken for resolution: I have reviewed the shared data, and I have searched for similar encountered issues.
+Resolution: The configuration was incomplete, as aaa authentication needs to be set to LOCAL. This was shared with the TAC. A new enhancement defect is filed to add an ASDM warning."
+"BEMS01738312","*CLOSED* asdm: 5555 7.20.2 is ASDM usable - NET ONE SYSTEMS (ASDM 697089838)","Meenakshi Nagaraj (meenagar)","6","Closed","BEMS","customer is using ASA5555 and hit CSCwi56155.
+so customer is planning to upgrade its ASDM 7.14.1.48 to 7.20.2.
+however compatibility guide show only 9.14(4.14) 7.18(1.152) for ASA5555.
+
+I am aware ASDM support all lower versions, but I am not aware if old device such as ASA5555 using ASDM7.20.2 is also supported.","Customer: NET ONE SYSTEMS - SR:697089838
+Product: ASDM / Model: ASA5555 / Version(s): [""7.20.2""]
+Bugs: CSCwi56155
+---
+Problem Description:*CLOSED* asdm: 5555 7.20.2 is ASDM usable - NET ONE SYSTEMS (ASDM 697089838)
+Actions Taken for resolution: customer can upgrade to the fixed ASDM version 7.20.2.
+Resolution: ASDM is backwards compatible. Any latest ASDM can be used for older ASA images. 
+Any Workaround:
+Notes:"
+"BEMS01737997","*CLOSED* asdm: FP2140 7.19.1.95 ASA is not exporting NAT table via ASDM - HOSPITAL FOR SPECIAL SURGERY (ASDM 697107666)","Rajesh Arasanapalai Varadhan (raav)","15","Closed","BEMS","ASA is not exporting NAT table via ASDM","Customer: HOSPITAL FOR SPECIAL SURGERY - SR:697107666
+Product: ASDM / Model: FP2140 / Version(s): [""7.19.1.95""]
+Bugs: CSCwj66085
+---
+Problem Description:*CLOSED* asdm: FP2140 7.19.1.95 ASA is not exporting NAT table via ASDM - HOSPITAL FOR SPECIAL SURGERY (ASDM 697107666)
+Actions Taken for resolution: Reproduced this scenario, Triaged, Defect raised and Resolved
+Resolution: This fix will be part of 7.22 ASDM release in line with FTD 7.6 /ASA 9.22 release
+Any Workaround: Yes, export the entire configuration instead of selectively exporting nat configuration
+Notes:"
+"BEMS01737484","*CLOSED* asdm: FP4100 7.20.1 9.18.4.8 some of the ACL with forward reference entries is not reflected on the ASDM - TULLVERKET (ASDM 696939874)","Adrian Koszorus (akoszoru)","3","Closed","BEMS","* ASA  9.18(4)8 with the ASDM version 7.20(1), some of the ACL with forward reference entries is not reflected on the ASDM even if they exist on the CLI.
+
+>> the ACL entries from the CLI are :
+
+asa/intITis11(config)# sh access-list dummyacl_access_out
+
+access-list dummyacl_access_out; 1 elements; name hash: 0x703b1aa7
+access-list dummyacl_access_out line 1 extended permit tcp host 10.4.0.24 object 138.215.228.133 eq https log informational interval 300 (hitcnt=0) (forward-referenced) (inactive) 0xdb6bc821
+access-list dummyacl_access_out line 2 extended permit tcp host 10.4.0.24 object 138.215.228.134 eq https log informational interval 300 (hitcnt=0) (forward-referenced) (inactive) 0x46b419de
+access-list dummyacl_access_out line 3 extended permit tcp host 10.4.0.24 object 138.215.228.135 object-group DM_INLINE_TCP_400 log informational interval 300 (hitcnt=0) (forward-referenced) 0xefa737e4
+access-list dummyacl_access_out line 4 extended permit tcp host 10.4.0.24 object 138.215.228.136 object-group DM_INLINE_TCP_401 log informational interval 300 (hitcnt=0) (forward-referenced) 0x61315f23
+access-list dummyacl_access_out line 5 extended permit tcp host 10.4.0.24 object 138.215.228.137 eq https log informational interval 300 (hitcnt=0) (forward-referenced) (inactive) 0x092523ae
+access-list dummyacl_access_out line 6 extended deny ip any any (hitcnt=0) 0x75e704e8
+
+>> from the ASDM:
+
+
+access-list dummyacl_access_out line 1 extended permit tcp host 10.4.0.24 object 138.215.228.133 eq https log 
+access-list dummyacl_access_out line 2 extended permit tcp host 10.4.0.24 object 138.215.228.134 eq https log 
+access-list dummyacl_access_out line 5 extended permit tcp host 10.4.0.24 object 138.215.228.137 eq https log 
+access-list dummyacl_access_out line 6 extended deny ip any any 
+
+so line 3,4 are missing.
+
+* the common thing between the non reflected ACE is both contain non configured service object group.
+
+* by navigating to ( ASDM > Configuration > Firewall > advanced > ACL manger > command ignored by ASDM on the right bottom I found the below:
+
+""The Cisco ASDM did not recognize some commands while parsing the running configuration of your device. ASDM does not support the complete device command set. Command(s) which appear below will be ignored. They will not be removed from or changed in the running device configuration.""
+
+and then it listed the ignored line 3 and 4:
+
+access-list dummyacl_access_out extended permit tcp host 10.4.0.24 object 138.215.228.135 object-group DM_INLINE_TCP_400 log 
+access-list dummyacl_access_out extended permit tcp host 10.4.0.24 object 138.215.228.136 object-group DM_INLINE_TCP_401 log 
+ max-keepalive-requests 30
+
+* due to this behaviour, changing the ACL entries is not working fine, so I tried from the CLI to swap the line 1 and 3:
+
+no access-list dummyacl_access_out line 1 extended permit tcp host 10.4.0.24 object 138.215.228.133 eq https                                                                            
+
+no access-list dummyacl_access_out line 3 extended permit tcp host 10.4.0.24 object 138.215.228.135 object-group DM_INLINE_TCP_400 
+                                                                            
+access-list dummyacl_access_out line 1 extended permit tcp host 10.4.0.24 object 138.215.228.135 object-group DM_INLINE_TCP_400 log                                                                        
+access-list dummyacl_access_out line 3 extended permit tcp host 10.4.0.24 object 138.215.228.133 eq http log                                                              
+
+
+
+the results becomes as below:
+
+access-list dummyacl_access_out extended permit tcp host 10.4.0.24 object 138.215.228.134 eq https log
+access-list dummyacl_access_out extended permit tcp host 10.4.0.24 object 138.215.228.135 object-group DM_INLINE_TCP_400 log
+access-list dummyacl_access_out extended permit tcp host 10.4.0.24 object 138.215.228.133 eq www log
+access-list dummyacl_access_out extended permit tcp host 10.4.0.24 object 138.215.228.136 object-group DM_INLINE_TCP_401 log
+access-list dummyacl_access_out extended permit tcp host 10.4.0.24 object 138.215.228.137 eq https log
+access-list dummyacl_access_out extended deny ip any any
+
+on the ASDM I can see that the order changed after the refresh :
+
+
+access-list dummyacl_access_out line 2 extended permit tcp host 10.4.0.24 object 138.215.228.134 eq https log 
+access-list dummyacl_access_out line 1 extended permit tcp host 10.4.0.24 object 138.215.228.133 eq https log 
+access-list dummyacl_access_out line 5 extended permit tcp host 10.4.0.24 object 138.215.228.137 eq https log 
+access-list dummyacl_access_out line 6 extended deny ip any any 
+
+However, if I changed the order on the ASDM and saved then applied I saw a new error ""must contain at least one ACE"" so swapping back lines 2 and 1 from the ASDM and then refreshing the order never changed neither from the ASDM nor from the CLI.","Customer: TULLVERKET - SR:696939874
+Product: ASDM / Model: FP4100 / Version(s): [""7.20.1"",""9.18.4.8""]
+Bugs: CSCwj28481
+---
+Problem Description:*CLOSED* asdm: FP4100 7.20.1 9.18.4.8 some of the ACL with forward reference entries is not reflected on the ASDM - TULLVERKET (ASDM 696939874)
+Actions Taken for resolution: I have analyzed the shared data, checked the repro lab, engaged the ASDM development team.
+Resolution: A known customer-visible defect is hit. The customer should track it and upgrade once a fix is available. 
+Any Workaround: As per the defect hit."
