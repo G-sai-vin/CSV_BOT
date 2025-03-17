@@ -2,7 +2,7 @@ import os
 import requests
 import base64
 import json
-#import openai
+import openai
 import streamlit as st
 from streamlit_chat import message
 from langchain.chat_models import AzureChatOpenAI
@@ -10,13 +10,9 @@ from langchain.chains import ConversationChain
 from langchain.document_loaders.csv_loader import CSVLoader
 import tempfile
 
-# Streamlit Sidebar Inputs for Credentials
-client_id = st.sidebar.text_input("Enter Client ID:", type="password")
-client_secret = st.sidebar.text_input("Enter Client Secret:", type="password")
-CISCO_OPENAI_APP_KEY = st.sidebar.text_input("Enter Cisco OpenAI App Key:", type="password")
-
 # Cisco Authentication
-
+client_id = 'cG9jLXRyaWFsMjAyNEF1Z3VzdDA3_cfdaf9d6cd4d4cb59646de55bf18a4'
+client_secret = 'vmxOYAuwO7rmkKnIKYu9tqMb7sKcmbekQ39cBFbg2k57RbziifppC3Ez7xoqtOaL'
 url = "https://id.cisco.com/oauth2/default/v1/token"
 
 payload = "grant_type=client_credentials"
@@ -31,6 +27,7 @@ token_response = requests.request("POST", url, headers=headers, data=payload)
 api_token = token_response.json()["access_token"]
 
 # Azure OpenAI Chat Model
+CISCO_OPENAI_APP_KEY = 'egai-prd-ntd-fw-ai-automate-unit-test-case-gen-1'
 CISCO_BRAIN_USER_ID = ''
 print(CISCO_OPENAI_APP_KEY)
 llm = AzureChatOpenAI(
@@ -44,7 +41,7 @@ llm = AzureChatOpenAI(
 )
 
 # Streamlit App
-st.title("CSV Chatbot 🤖")
+st.title("CSV Chatbot with Azure OpenAI")
 uploaded_file = st.sidebar.file_uploader("Upload CSV file", type="csv")
 
 if uploaded_file:
