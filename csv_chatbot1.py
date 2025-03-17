@@ -41,13 +41,13 @@ llm = AzureChatOpenAI(
 )
 
 # Streamlit App
-'''st.title("CSV Chatbot with Azure OpenAI")
-uploaded_file = st.sidebar.file_uploader("Upload CSV file", type="csv")
+st.title("CSV Chatbot with Azure OpenAI")
+#uploaded_file = st.sidebar.file_uploader("Upload CSV file", type="csv")
 
-if uploaded_file:
-    with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
-        tmp_file.write(uploaded_file.getvalue())
-        tmp_file_path = tmp_file.name'''
+#if uploaded_file:
+    #with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
+        #tmp_file.write(uploaded_file.getvalue())
+        #tmp_file_path = tmp_file.name
 
 tmp_file_path = "myClip_ENGAGEMENT(1).csv"
 loader = CSVLoader(file_path=tmp_file_path, encoding="utf-8", csv_args={'delimiter': ','})
