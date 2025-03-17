@@ -53,27 +53,27 @@ tmp_file_path = "myClip_ENGAGEMENT(1).csv"
 loader = CSVLoader(file_path=tmp_file_path, encoding="utf-8", csv_args={'delimiter': ','})
 data = loader.load()
     
-    # Convert CSV data into context for LLM
-    csv_content = "\n".join([doc.page_content for doc in data])
+# Convert CSV data into context for LLM
+csv_content = "\n".join([doc.page_content for doc in data])
 
-    # Conversation Memory
-    if 'history' not in st.session_state:
-        st.session_state['history'] = []
+# Conversation Memory
+if 'history' not in st.session_state:
+    st.session_state['history'] = []
 
-    conversation = ConversationChain(llm=llm)
+conversation = ConversationChain(llm=llm)
 
-    def chatbot_response(query):
-        response = conversation.run(f"Based on this CSV data: {csv_content}, answer the following: {query}")
-        st.session_state['history'].append((query, response))
-        return response
+def chatbot_response(query):
+    response = conversation.run(f"Based on this CSV data: {csv_content}, answer the following: {query}")
+    st.session_state['history'].append((query, response))
+    return response
 
-    user_input = st.text_input("Ask a question about your CSV data:")
-    if user_input:
-        output = chatbot_response(user_input)
-        st.write(output)
+user_input = st.text_input("Ask a question about your CSV data:")
+if user_input:
+    output = chatbot_response(user_input)
+    st.write(output)
 
-    # Display chat history
-    if st.session_state['history']:
-        for q, r in st.session_state['history']:
-            message(q, is_user=True)
-            message(r)
+# Display chat history
+if st.session_state['history']:
+    for q, r in st.session_state['history']:
+        message(q, is_user=True)
+        message(r)
