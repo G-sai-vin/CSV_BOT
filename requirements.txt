@@ -3,3 +3,5 @@ streamlit-chat
 openai
 requests
 langchain
+langchain-community
+
