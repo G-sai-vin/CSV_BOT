@@ -2,7 +2,7 @@ import os
 import requests
 import base64
 import json
-import openai
+#import openai
 import streamlit as st
 from streamlit_chat import message
 from langchain.chat_models import AzureChatOpenAI
